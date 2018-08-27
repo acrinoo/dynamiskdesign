@@ -1,1 +1,3 @@
+Nyt dokument
+Javascript
 # dynamiskdesign
