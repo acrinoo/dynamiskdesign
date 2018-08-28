@@ -19,7 +19,6 @@
             font-size: 2rem;
             margin: 10px;
         }
-
     </style>
 
 </head>
@@ -34,7 +33,7 @@
     <button id="html">
         html
     </button>
-    <button id="slet">
+    <button id="flyt">
         flyt
     </button>
     <div id="box"></div>
@@ -49,21 +48,30 @@
         function doSomething() {
             box.textContent = "klik";
 
-            //slet knap//
-
-            const slet = document.querySelector("#slet");
-            slet.addEventListener("click", goerNoget)
-
-            function goerNoget() {
-                box.textContent = "";
-
-                //html knap//
-
-            }
-
-
         }
 
+        //slet knap//
+
+        const slet = document.querySelector("#slet");
+        slet.addEventListener("click", goerNoget)
+
+        function goerNoget() {
+            box.textContent = "";
+        }
+        //html knap//
+
+        html.addEventListener("click", htmlTekst);
+
+        function htmlTekst() {
+            document.querySelector("#box").innerHTML = "<h2>Hello</h2> XXXXXXX";
+        }
+
+        flyt.addEventListener("click", tekstBox);
+
+        function tekstBox() {
+            bax.innerHTML = box.innerHTML;
+            box.innerHTML = "";
+        }
     </script>
 </body>
 
