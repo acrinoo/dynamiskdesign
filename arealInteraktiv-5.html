@@ -8,12 +8,17 @@
 
 <body>
     <script>
-        let navn = prompt("Angiv længde: ");
+        let længde = prompt("Angiv længde: "),
+            width = prompt("angiv bredde"),
+            besked;
 
-        if (navn != null && navn != "") {
-            alert("tak " + "Angiv en bredde: ");
-        } else {
-            alert("farvel");
+        if (Number(længde) && Number(width)) {
+            alert("længde: " + længde + "meter Bredden:" + width + "meter arealet:" + længde * width + "kvadratmeter");
+        }
+        );
+
+        else {
+            alert("Kan ikke regne ud");
         }
     </script>
 </body>
